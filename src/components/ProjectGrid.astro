@@ -1,29 +1,32 @@
 ---
 import { getCollection } from 'astro:content';
-import ProjectCard from './ProjectCard.astro';
+import ProjectRow from './ProjectRow.astro';
 
 const projects = await getCollection('projects');
 const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
 ---
 
-<section id="work" class="px-6 py-20">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold mb-4">Shipped Products</h2>
-    <p class="text-neutral-400 mb-12 max-w-2xl">
+<section id="work" class="py-16">
+  <div class="max-w-6xl mx-auto px-6 mb-12">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Shipped Products</h2>
+    <p class="text-[--color-text-muted] max-w-2xl text-lg">
       Apps I've strategized, designed, and built — from concept to App Store.
     </p>
+  </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {sortedProjects.map((project) => (
-        <ProjectCard
-          title={project.data.title}
-          slug={project.data.slug}
-          tagline={project.data.tagline}
-          primaryColor={project.data.primaryColor}
-          featuredScreenshot={project.data.featuredScreenshot}
-          storeLinks={project.data.storeLinks}
-        />
-      ))}
-    </div>
+  <div>
+    {sortedProjects.map((project, index) => (
+      <ProjectRow
+        title={project.data.title}
+        slug={project.data.slug}
+        tagline={project.data.tagline}
+        description={project.body}
+        primaryColor={project.data.primaryColor}
+        featuredScreenshot={project.data.featuredScreenshot}
+        screenshots={project.data.screenshots}
+        storeLinks={project.data.storeLinks}
+        reversed={index % 2 === 1}
+      />
+    ))}
   </div>
 </section>
