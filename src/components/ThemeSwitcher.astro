@@ -8,67 +8,63 @@ const themes = [
 ];
 ---
 
-<div class="fixed bottom-6 right-6 z-50">
-  <button
-    id="theme-toggle"
-    class="p-3 rounded-full bg-[--color-surface-elevated] border border-[--color-border] shadow-lg hover:scale-105 transition-transform"
-    aria-label="Change theme"
-  >
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
-    </svg>
-  </button>
-
-  <div
-    id="theme-menu"
-    class="absolute bottom-16 right-0 p-2 rounded-xl bg-[--color-surface-elevated] border border-[--color-border] shadow-xl hidden"
-  >
-    <div class="flex gap-2">
-      {themes.map((theme) => (
-        <button
-          data-theme-select={theme.id}
-          class="w-8 h-8 rounded-full border-2 border-transparent hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[--color-surface]"
-          style={`background-color: ${theme.color}`}
-          title={theme.name}
-          aria-label={`Switch to ${theme.name} theme`}
-        />
-      ))}
-    </div>
-  </div>
+<div class="fixed bottom-6 right-6 z-50 flex gap-2 p-3 rounded-2xl bg-black/80 backdrop-blur border border-white/20">
+  {themes.map((theme) => (
+    <button
+      data-theme-select={theme.id}
+      class="theme-btn w-10 h-10 rounded-full border-4 border-transparent hover:scale-110 transition-all"
+      style={`background-color: ${theme.color}`}
+      title={theme.name}
+      aria-label={`Switch to ${theme.name} theme`}
+    />
+  ))}
 </div>
 
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  const menu = document.getElementById('theme-menu');
-  const buttons = document.querySelectorAll('[data-theme-select]');
-
-  // Load saved theme
-  const savedTheme = localStorage.getItem('theme') || 'default';
-  if (savedTheme !== 'default') {
-    document.documentElement.setAttribute('data-theme', savedTheme);
+<style>
+  .theme-btn.active {
+    border-color: white !important;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px currentColor;
   }
+</style>
 
-  toggle?.addEventListener('click', () => {
-    menu?.classList.toggle('hidden');
-  });
+<script is:inline>
+  (function() {
+    var buttons = document.querySelectorAll('[data-theme-select]');
 
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const theme = btn.getAttribute('data-theme-select');
-      if (theme === 'default') {
+    function setTheme(themeId) {
+      // Update data-theme attribute
+      if (themeId === 'default') {
         document.documentElement.removeAttribute('data-theme');
       } else {
-        document.documentElement.setAttribute('data-theme', theme || '');
+        document.documentElement.setAttribute('data-theme', themeId);
       }
-      localStorage.setItem('theme', theme || 'default');
-      menu?.classList.add('hidden');
-    });
-  });
 
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!toggle?.contains(e.target as Node) && !menu?.contains(e.target as Node)) {
-      menu?.classList.add('hidden');
+      // Update button states
+      buttons.forEach(function(btn) {
+        if (btn.getAttribute('data-theme-select') === themeId) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Save to localStorage
+      localStorage.setItem('theme', themeId);
+
+      console.log('Theme set to:', themeId);
     }
-  });
+
+    // Load saved theme on init
+    var savedTheme = localStorage.getItem('theme') || 'default';
+    setTheme(savedTheme);
+
+    // Add click handlers
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var theme = btn.getAttribute('data-theme-select');
+        setTheme(theme);
+      });
+    });
+  })();
 </script>

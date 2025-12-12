@@ -10,26 +10,32 @@ const { name, title, tagline } = Astro.props;
 
 <section class="min-h-[70vh] flex flex-col justify-center px-6 py-20">
   <div class="max-w-4xl mx-auto w-full">
-    <p class="text-neutral-400 mb-4 tracking-wide uppercase text-sm">{name}</p>
+    <p class="text-[--color-text-muted] mb-4 tracking-wide uppercase text-sm">{name}</p>
 
-    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight text-[--color-text]">
       {title}
     </h1>
 
-    <p class="text-xl md:text-2xl text-neutral-300 max-w-2xl leading-relaxed">
+    <p class="text-xl md:text-2xl text-[--color-text-muted] max-w-2xl leading-relaxed">
       {tagline}
     </p>
 
     <div class="flex gap-4 mt-10">
       <a
         href="#work"
-        class="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-neutral-200 transition-colors"
+        class="px-6 py-3 rounded-lg font-medium transition-colors"
+        style="background-color: var(--color-button-bg); color: var(--color-button-text);"
+        onmouseover="this.style.backgroundColor='var(--color-button-hover)'"
+        onmouseout="this.style.backgroundColor='var(--color-button-bg)'"
       >
         View Work
       </a>
       <a
         href="#contact"
-        class="px-6 py-3 border border-neutral-700 rounded-lg font-medium hover:bg-white/5 transition-colors"
+        class="px-6 py-3 rounded-lg font-medium transition-colors"
+        style="border: 1px solid var(--color-button-secondary-border); background: transparent;"
+        onmouseover="this.style.backgroundColor='var(--color-button-secondary-hover)'"
+        onmouseout="this.style.backgroundColor='transparent'"
       >
         Get in Touch
       </a>
