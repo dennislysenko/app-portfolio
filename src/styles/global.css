@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-primary: #3B82F6;
+  --color-surface: #0a0a0a;
+  --color-surface-elevated: #141414;
+  --color-border: #262626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: #fafafa;
+  font-family: var(--font-sans);
+}

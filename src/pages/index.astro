@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import Contact from '../components/Contact.astro';
+
+// Customize these values
+const siteConfig = {
+  name: "Dennis",
+  title: "Fractional Product Partner",
+  tagline: "I help founders turn ideas into shipped products. Strategy that executes — from roadmap to App Store.",
+  email: "hello@example.com",
+  twitter: "",
+  github: "",
+  linkedin: "",
+};
+---
+
+<Layout title={`${siteConfig.name} — ${siteConfig.title}`}>
+  <main>
+    <Hero
+      name={siteConfig.name}
+      title={siteConfig.title}
+      tagline={siteConfig.tagline}
+    />
+
+    <ProjectGrid />
+
+    <Contact
+      email={siteConfig.email}
+      twitter={siteConfig.twitter}
+      github={siteConfig.github}
+      linkedin={siteConfig.linkedin}
+    />
+  </main>
+
+  <footer class="px-6 py-8 text-center text-neutral-500 text-sm">
+    <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+  </footer>
+</Layout>
