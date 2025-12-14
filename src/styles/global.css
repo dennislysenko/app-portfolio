@@ -6,22 +6,7 @@
 
 /* Theme definitions */
 :root {
-  /* Default: Midnight - Cool blue-black */
-  --color-primary: #3B82F6;
-  --color-surface: #09090b;
-  --color-surface-elevated: #18181b;
-  --color-border: #27272a;
-  --color-text: #fafafa;
-  --color-text-muted: #a1a1aa;
-  --color-button-bg: #fafafa;
-  --color-button-text: #09090b;
-  --color-button-hover: #e4e4e7;
-  --color-button-secondary-border: #3f3f46;
-  --color-button-secondary-hover: rgba(255,255,255,0.05);
-}
-
-[data-theme="warm"] {
-  /* Warm - Rich amber/sepia tones */
+  /* Default: Warm - Rich amber/sepia tones */
   --color-primary: #F59E0B;
   --color-surface: #1c1410;
   --color-surface-elevated: #292018;
@@ -33,6 +18,21 @@
   --color-button-hover: #fde68a;
   --color-button-secondary-border: #78553a;
   --color-button-secondary-hover: rgba(254,243,199,0.1);
+}
+
+[data-theme="midnight"] {
+  /* Midnight - Cool blue-black */
+  --color-primary: #3B82F6;
+  --color-surface: #09090b;
+  --color-surface-elevated: #18181b;
+  --color-border: #27272a;
+  --color-text: #fafafa;
+  --color-text-muted: #a1a1aa;
+  --color-button-bg: #fafafa;
+  --color-button-text: #09090b;
+  --color-button-hover: #e4e4e7;
+  --color-button-secondary-border: #3f3f46;
+  --color-button-secondary-hover: rgba(255,255,255,0.05);
 }
 
 [data-theme="forest"] {

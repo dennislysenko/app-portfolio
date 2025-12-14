@@ -1,11 +1,17 @@
 ---
+interface Stat {
+  number: string;
+  label: string;
+}
+
 interface Props {
   name: string;
   title: string;
   tagline: string;
+  stats?: Stat[];
 }
 
-const { name, title, tagline } = Astro.props;
+const { name, title, tagline, stats = [] } = Astro.props;
 ---
 
 <section class="min-h-[70vh] flex flex-col justify-center px-6 py-20">
@@ -19,6 +25,17 @@ const { name, title, tagline } = Astro.props;
     <p class="text-xl md:text-2xl text-[--color-text-muted] max-w-2xl leading-relaxed">
       {tagline}
     </p>
+
+    {stats.length > 0 && (
+      <div class="flex flex-wrap gap-8 md:gap-12 mt-10">
+        {stats.map((stat) => (
+          <div class="flex flex-col">
+            <span class="text-3xl md:text-4xl font-bold text-[--color-accent]">{stat.number}</span>
+            <span class="text-sm text-[--color-text-muted] uppercase tracking-wide">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    )}
 
     <div class="flex gap-4 mt-10">
       <a

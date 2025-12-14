@@ -1,18 +1,37 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import HighlightReel from '../components/HighlightReel.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
+import OffTheClock from '../components/OffTheClock.astro';
 import Contact from '../components/Contact.astro';
 
 // Customize these values
 const siteConfig = {
-  name: "Dennis",
+  name: "Dennis Lysenko",
   title: "Fractional Product Partner",
-  tagline: "I help founders turn ideas into shipped products. Strategy that executes — from roadmap to App Store.",
-  email: "hello@example.com",
+  tagline: "Helping founders skip the expensive lessons — the hundred small decisions that determine whether you scale or start over.",
+  stats: [
+    { number: "10+", label: "Years in Apps" },
+    { number: "15", label: "Apps Shipped" },
+    { number: "$5M+", label: "Revenue Generated" },
+  ],
+  highlights: [
+    { stat: "$3M", label: "Largest ARR app I've worked on" },
+    { stat: "$4/download", label: "Best revenue to downloads ratio" },
+    { stat: "$200K/mo", label: "Biggest I've scaled from zero" },
+    { stat: "Auto Caption", label: "The one I can't let go" },
+  ],
+  hobbies: [
+    { text: "Diehard Arsenal fan. Yes, even through the banter years." },
+    { text: "Deep into health & longevity after a brutal year with long covid taught me not to take it for granted." },
+    { text: "Always scheming my next free flight. Ask me about credit card points." },
+  ],
+  email: "dennis@dennislysenko.tech",
   twitter: "",
   github: "",
-  linkedin: "",
+  linkedin: "dennis-lysenko-2038aa57",
+  upwork: "https://www.upwork.com/freelancers/dennisl",
 };
 ---
 
@@ -22,15 +41,21 @@ const siteConfig = {
       name={siteConfig.name}
       title={siteConfig.title}
       tagline={siteConfig.tagline}
+      stats={siteConfig.stats}
     />
 
+    <HighlightReel highlights={siteConfig.highlights} />
+
     <ProjectGrid />
+
+    <OffTheClock hobbies={siteConfig.hobbies} />
 
     <Contact
       email={siteConfig.email}
       twitter={siteConfig.twitter}
       github={siteConfig.github}
       linkedin={siteConfig.linkedin}
+      upwork={siteConfig.upwork}
     />
   </main>
 

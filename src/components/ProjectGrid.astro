@@ -8,10 +8,7 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
 
 <section id="work" class="py-16">
   <div class="max-w-6xl mx-auto px-6 mb-12">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Shipped Products</h2>
-    <p class="text-[--color-text-muted] max-w-2xl text-lg">
-      Apps I've strategized, designed, and built — from concept to App Store.
-    </p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">App Portfolio</h2>
   </div>
 
   <div>
@@ -22,6 +19,7 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
         tagline={project.data.tagline}
         description={project.body}
         primaryColor={project.data.primaryColor}
+        tag={project.data.tag}
         featuredScreenshot={project.data.featuredScreenshot}
         screenshots={project.data.screenshots}
         storeLinks={project.data.storeLinks}

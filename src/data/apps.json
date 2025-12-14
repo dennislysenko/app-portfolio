@@ -1,0 +1,100 @@
+{
+  "personal": [
+    {
+      "name": "Auto Caption",
+      "appStoreId": "1659145800",
+      "appStoreUrl": "https://apps.apple.com/app/id1659145800",
+      "featuredOnSite": true
+    },
+    {
+      "name": "Transcribe Speech to Text",
+      "appStoreId": "6451267085",
+      "appStoreUrl": "https://apps.apple.com/us/app/transcribe-audio-video-voice/id6451267085",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Video 2 MP3 Converter AI",
+      "appStoreId": "6449499013",
+      "appStoreUrl": "https://apps.apple.com/us/app/video-2-mp3-converter/id6449499013",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Riff",
+      "appStoreId": "922614988",
+      "appStoreUrl": "https://apps.apple.com/app/id922614988",
+      "featuredOnSite": true
+    },
+    {
+      "name": "Nu Photo",
+      "appStoreId": "1435721457",
+      "appStoreUrl": "https://apps.apple.com/app/id1435721457",
+      "featuredOnSite": false
+    },
+    {
+      "name": "No Crop Story",
+      "appStoreId": "6444579459",
+      "appStoreUrl": "https://apps.apple.com/app/id6444579459",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Fitness AI",
+      "appStoreId": "6738060024",
+      "appStoreUrl": "https://apps.apple.com/app/id6738060024",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Rawdogging Boredom",
+      "appStoreId": "6755054445",
+      "appStoreUrl": "https://apps.apple.com/app/id6755054445",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Spice Life",
+      "appStoreId": "1437084367",
+      "appStoreUrl": "https://apps.apple.com/app/id1437084367",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Teeth Whitener & Whitening",
+      "appStoreId": "6477489444",
+      "appStoreUrl": "https://apps.apple.com/us/app/teeth-whitener-whitening/id6477489444",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Red Eye Corrector",
+      "appStoreId": "6479655837",
+      "appStoreUrl": "https://apps.apple.com/us/app/red-eye-corrector-color-change/id6479655837",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Selfie.AR",
+      "appStoreId": "",
+      "appStoreUrl": "",
+      "featuredOnSite": false,
+      "status": "defunct"
+    },
+    {
+      "name": "Boomerang App",
+      "appStoreId": "",
+      "appStoreUrl": "",
+      "featuredOnSite": false,
+      "status": "defunct"
+    }
+  ],
+  "client": [
+    {
+      "name": "CleanSweep",
+      "role": "Strategy & Development",
+      "appStoreId": "6748840698",
+      "appStoreUrl": "https://apps.apple.com/app/id6748840698",
+      "featuredOnSite": false
+    },
+    {
+      "name": "Track N Trail",
+      "role": "Strategy & Development",
+      "appStoreId": "6746768148",
+      "appStoreUrl": "https://apps.apple.com/app/id6746768148",
+      "featuredOnSite": true
+    }
+  ]
+}

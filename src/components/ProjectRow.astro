@@ -5,6 +5,7 @@ interface Props {
   tagline?: string;
   description?: string;
   primaryColor: string;
+  tag?: string;
   featuredScreenshot?: {
     src: string;
     alt: string;
@@ -26,6 +27,7 @@ const {
   tagline,
   description,
   primaryColor,
+  tag,
   featuredScreenshot,
   screenshots,
   storeLinks,
@@ -89,6 +91,11 @@ const displayScreenshots = screenshots?.slice(0, 3) || [];
 
       <!-- Content Side -->
       <div class="w-full md:w-1/2">
+        {tag && (
+          <span class="inline-block text-xs font-medium uppercase tracking-wider text-[--accent] mb-3">
+            {tag}
+          </span>
+        )}
         <h3 class="text-3xl md:text-4xl font-bold mb-4">{title}</h3>
 
         {tagline && (
