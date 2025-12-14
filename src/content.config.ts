@@ -8,6 +8,8 @@ const projects = defineCollection({
     slug: z.string(),
     tagline: z.string().optional(),
     primaryColor: z.string().default('#3B82F6'),
+    tag: z.string().optional(),
+    badge: z.string().optional(),
     storeLinks: z.object({
       appStore: z.string().optional(),
       playStore: z.string().optional(),

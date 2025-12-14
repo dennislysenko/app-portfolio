@@ -6,6 +6,7 @@ interface Props {
   description?: string;
   primaryColor: string;
   tag?: string;
+  badge?: string;
   featuredScreenshot?: {
     src: string;
     alt: string;
@@ -28,6 +29,7 @@ const {
   description,
   primaryColor,
   tag,
+  badge,
   featuredScreenshot,
   screenshots,
   storeLinks,
@@ -91,17 +93,14 @@ const displayScreenshots = screenshots?.slice(0, 3) || [];
 
       <!-- Content Side -->
       <div class="w-full md:w-1/2">
-        {tag && (
-          <span class="inline-block text-xs font-medium uppercase tracking-wider text-[--accent] mb-3">
-            {tag}
+        <h3 class="text-3xl md:text-4xl font-bold mb-3">{title}</h3>
+        {badge && (
+          <span class="inline-block text-xs font-semibold uppercase tracking-wide px-3 py-1.5 rounded-full mb-4" style="background-color: var(--color-primary); color: var(--color-surface);">
+            {badge}
           </span>
         )}
-        <h3 class="text-3xl md:text-4xl font-bold mb-4">{title}</h3>
 
-        {tagline && (
-          <p class="text-xl text-[--color-text-muted] mb-4">{tagline}</p>
-        )}
-
+        
         {description && (
           <p class="text-[--color-text-muted] mb-6 leading-relaxed">{description}</p>
         )}

@@ -20,11 +20,18 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
         description={project.body}
         primaryColor={project.data.primaryColor}
         tag={project.data.tag}
+        badge={project.data.badge}
         featuredScreenshot={project.data.featuredScreenshot}
         screenshots={project.data.screenshots}
         storeLinks={project.data.storeLinks}
         reversed={index % 2 === 1}
       />
     ))}
+  </div>
+
+  <div class="max-w-6xl mx-auto px-6 mt-12">
+    <p class="text-muted text-center italic">
+      And 9 more: Video 2 MP3 Converter, No Crop Story, Fitness AI, Teeth Whitener, Red Eye Corrector, CleanSweep, plus 3 retired apps.
+    </p>
   </div>
 </section>

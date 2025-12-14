@@ -26,6 +26,10 @@ const { name, title, tagline, stats = [] } = Astro.props;
       {tagline}
     </p>
 
+    <p class="text-base text-[--color-text-muted] italic mt-4 opacity-75">
+      Always learning. Right now that means shipping 10x faster with AI, and enhancing everything from ASO to design to QA.
+    </p>
+
     {stats.length > 0 && (
       <div class="flex flex-wrap gap-8 md:gap-12 mt-10">
         {stats.map((stat) => (

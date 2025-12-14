@@ -10,7 +10,7 @@
       "name": "Transcribe Speech to Text",
       "appStoreId": "6451267085",
       "appStoreUrl": "https://apps.apple.com/us/app/transcribe-audio-video-voice/id6451267085",
-      "featuredOnSite": false
+      "featuredOnSite": true
     },
     {
       "name": "Video 2 MP3 Converter AI",
@@ -22,13 +22,15 @@
       "name": "Riff",
       "appStoreId": "922614988",
       "appStoreUrl": "https://apps.apple.com/app/id922614988",
-      "featuredOnSite": true
+      "featuredOnSite": true,
+      "badge": "The One That Started It All"
     },
     {
       "name": "Nu Photo",
       "appStoreId": "1435721457",
       "appStoreUrl": "https://apps.apple.com/app/id1435721457",
-      "featuredOnSite": false
+      "featuredOnSite": true,
+      "badge": "First Solo Project"
     },
     {
       "name": "No Crop Story",
@@ -46,13 +48,15 @@
       "name": "Rawdogging Boredom",
       "appStoreId": "6755054445",
       "appStoreUrl": "https://apps.apple.com/app/id6755054445",
-      "featuredOnSite": false
+      "featuredOnSite": true,
+      "badge": "Latest Release"
     },
     {
       "name": "Spice Life",
-      "appStoreId": "1437084367",
-      "appStoreUrl": "https://apps.apple.com/app/id1437084367",
-      "featuredOnSite": false
+      "appStoreId": "",
+      "appStoreUrl": "",
+      "featuredOnSite": false,
+      "status": "defunct"
     },
     {
       "name": "Teeth Whitener & Whitening",

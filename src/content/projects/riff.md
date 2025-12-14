@@ -4,7 +4,8 @@ slug: "riff"
 tagline: "Turn Music Into Social Media Content"
 primaryColor: "#00BCD4"
 tag: "0→1: Built from scratch"
-order: 3
+badge: "The One That Started It All"
+order: 4
 storeLinks:
   appStore: "https://apps.apple.com/us/app/riff-music-video-maker/id922614988"
 screenshots:
