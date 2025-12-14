@@ -6,7 +6,7 @@ const projects = await getCollection('projects');
 const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
 ---
 
-<section id="work" class="py-16">
+<section id="work" class="py-20">
   <div class="max-w-6xl mx-auto px-6 mb-12">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">App Portfolio</h2>
   </div>
@@ -30,7 +30,7 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
   </div>
 
   <div class="max-w-6xl mx-auto px-6 mt-12">
-    <p class="text-muted text-center italic">
+    <p class="text-[--color-text-muted] text-center italic">
       And 9 more: Video 2 MP3 Converter, No Crop Story, Fitness AI, Teeth Whitener, Red Eye Corrector, CleanSweep, plus 3 retired apps.
     </p>
   </div>

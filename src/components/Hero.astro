@@ -42,22 +42,10 @@ const { name, title, tagline, stats = [] } = Astro.props;
     )}
 
     <div class="flex gap-4 mt-10">
-      <a
-        href="#work"
-        class="px-6 py-3 rounded-lg font-medium transition-colors"
-        style="background-color: var(--color-button-bg); color: var(--color-button-text);"
-        onmouseover="this.style.backgroundColor='var(--color-button-hover)'"
-        onmouseout="this.style.backgroundColor='var(--color-button-bg)'"
-      >
+      <a href="#work" class="btn btn-primary">
         View Work
       </a>
-      <a
-        href="#contact"
-        class="px-6 py-3 rounded-lg font-medium transition-colors"
-        style="border: 1px solid var(--color-button-secondary-border); background: transparent;"
-        onmouseover="this.style.backgroundColor='var(--color-button-secondary-hover)'"
-        onmouseout="this.style.backgroundColor='transparent'"
-      >
+      <a href="#contact" class="btn btn-secondary">
         Get in Touch
       </a>
     </div>
