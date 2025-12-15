@@ -6,9 +6,14 @@ const themes = [
   { id: 'lavender', name: 'Lavender', color: '#A78BFA' },
   { id: 'light', name: 'Light', color: '#2563EB' },
 ];
+
+const isProd = import.meta.env.PROD;
 ---
 
-<div class="fixed bottom-6 right-6 z-50 flex gap-2 p-3 rounded-2xl bg-black/80 backdrop-blur border border-white/20">
+<div class:list={[
+  "fixed bottom-6 right-6 z-50 flex gap-2 p-3 rounded-2xl bg-black/80 backdrop-blur border border-white/20",
+  isProd && "hidden md:flex"
+]}>
   {themes.map((theme) => (
     <button
       data-theme-select={theme.id}
