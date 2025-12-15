@@ -9,11 +9,11 @@ order: 6
 storeLinks:
   appStore: "https://apps.apple.com/us/app/nu-photo-vaporwave-filters/id1435721457"
 screenshots:
-  - src: "/app-portfolio/screenshots/nuphoto/screens/1.jpg"
+  - src: "/screenshots/nuphoto/screens/1.jpg"
     alt: "Vaporwave filter preview"
-  - src: "/app-portfolio/screenshots/nuphoto/screens/2.jpg"
+  - src: "/screenshots/nuphoto/screens/2.jpg"
     alt: "Glitch effects"
-  - src: "/app-portfolio/screenshots/nuphoto/screens/3.jpg"
+  - src: "/screenshots/nuphoto/screens/3.jpg"
     alt: "Retro camera modes"
 ---
 

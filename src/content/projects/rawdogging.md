@@ -9,11 +9,11 @@ order: 2
 storeLinks:
   appStore: "https://apps.apple.com/us/app/rawdogging-boredom/id6755054445"
 screenshots:
-  - src: "/app-portfolio/screenshots/rawdogging/screens/1.jpg"
+  - src: "/screenshots/rawdogging/screens/1.jpg"
     alt: "Main interface"
-  - src: "/app-portfolio/screenshots/rawdogging/screens/2.jpg"
+  - src: "/screenshots/rawdogging/screens/2.jpg"
     alt: "Session tracking"
-  - src: "/app-portfolio/screenshots/rawdogging/screens/3.jpg"
+  - src: "/screenshots/rawdogging/screens/3.jpg"
     alt: "Progress stats"
 ---
 

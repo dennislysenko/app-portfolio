@@ -8,11 +8,11 @@ order: 5
 storeLinks:
   appStore: "https://apps.apple.com/us/app/transcribe-audio-video-voice/id6451267085"
 screenshots:
-  - src: "/app-portfolio/screenshots/transcribe/screens/1.jpg"
+  - src: "/screenshots/transcribe/screens/1.jpg"
     alt: "Transcription interface"
-  - src: "/app-portfolio/screenshots/transcribe/screens/2.jpg"
+  - src: "/screenshots/transcribe/screens/2.jpg"
     alt: "Audio import options"
-  - src: "/app-portfolio/screenshots/transcribe/screens/3.jpg"
+  - src: "/screenshots/transcribe/screens/3.jpg"
     alt: "Export and sharing"
 ---
 

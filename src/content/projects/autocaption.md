@@ -8,11 +8,11 @@ order: 1
 storeLinks:
   appStore: "https://apps.apple.com/us/app/auto-caption-video-subtitles/id1659145800"
 screenshots:
-  - src: "/app-portfolio/screenshots/autocaption/screens/1.jpg"
+  - src: "/screenshots/autocaption/screens/1.jpg"
     alt: "Instant subtitles with AI"
-  - src: "/app-portfolio/screenshots/autocaption/screens/2.jpg"
+  - src: "/screenshots/autocaption/screens/2.jpg"
     alt: "Trending caption styles"
-  - src: "/app-portfolio/screenshots/autocaption/screens/3.jpg"
+  - src: "/screenshots/autocaption/screens/3.jpg"
     alt: "99 languages supported"
 ---
 
