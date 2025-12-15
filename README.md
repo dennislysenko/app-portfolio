@@ -1,43 +1,43 @@
-# Astro Starter Kit: Minimal
+# Dennis Lysenko
 
-```sh
-npm create astro@latest -- --template minimal
-```
+**Fractional Product Partner**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Helping founders skip the expensive lessons — the hundred small decisions that determine whether you scale or start over.
 
-## 🚀 Project Structure
+*Always learning. Right now that means shipping 10x faster with AI, and enhancing everything from ASO to design to QA.*
 
-Inside of your Astro project, you'll see the following folders and files:
+## The Numbers
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| 10+ Years in Apps | 15 Apps Shipped | $5M+ Revenue Generated |
+|:-:|:-:|:-:|
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## The Highlight Reel
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **$3M** — Largest ARR app I've worked on
+- **$4/download** — Best revenue to downloads ratio
+- **$200K/mo** — Biggest I've scaled from zero
+- **Auto Caption** — The one I can't let go
 
-Any static assets, like images, can be placed in the `public/` directory.
+## App Portfolio
 
-## 🧞 Commands
+Featured projects include Auto Caption, NuPhoto, Transcribe, Riff, Track & Trail, Rawdogging, and more.
 
-All commands are run from the root of the project, from a terminal:
+*Plus 9 more: Video 2 MP3 Converter, No Crop Story, Fitness AI, Teeth Whitener, Red Eye Corrector, CleanSweep, plus 3 retired apps.*
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Off the Clock
 
-## 👀 Want to learn more?
+- Diehard Arsenal fan. Yes, even through the banter years.
+- Deep into health & longevity after a brutal year with long covid taught me not to take it for granted.
+- Always scheming my next free flight. Ask me about credit card points.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Let's Build Something
+
+Currently have availability for 1-2 new projects.
+
+Best fit: founders building iOS apps who want a partner, not just a contractor.
+
+Most engagements start with a quick call to see if we're a good fit.
+
+- [Email](mailto:dennis@dennislysenko.tech)
+- [LinkedIn](https://linkedin.com/in/dennis-lysenko-2038aa57)
+- [Upwork](https://www.upwork.com/freelancers/dennisl)
