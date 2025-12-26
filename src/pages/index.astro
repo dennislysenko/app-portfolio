@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import HighlightReel from '../components/HighlightReel.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
+import Tools from '../components/Tools.astro';
 import OffTheClock from '../components/OffTheClock.astro';
 import Contact from '../components/Contact.astro';
 
@@ -27,6 +28,13 @@ const siteConfig = {
     { icon: "❤️‍🩹", text: "Deep into health & longevity after a brutal year with long covid taught me not to take it for granted." },
     { icon: "✈️", text: "Always scheming my next free flight. Ask me about credit card points." },
   ],
+  tools: [
+    {
+      name: "Screenshot Resizer",
+      description: "Fast, easy, free way to batch resize screenshots to common iPhone and iPad sizes.",
+      url: "https://tools.dennislysenko.tech"
+    },
+  ],
   email: "dennis@dennislysenko.tech",
   twitter: "",
   github: "",
@@ -47,6 +55,8 @@ const siteConfig = {
     <HighlightReel highlights={siteConfig.highlights} />
 
     <ProjectGrid />
+
+    <Tools tools={siteConfig.tools} />
 
     <OffTheClock hobbies={siteConfig.hobbies} />
 

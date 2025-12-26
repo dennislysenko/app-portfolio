@@ -1,0 +1,42 @@
+---
+export interface Tool {
+  name: string;
+  description: string;
+  url: string;
+}
+
+interface Props {
+  tools: Tool[];
+}
+
+const { tools } = Astro.props;
+---
+
+<section class="px-6 py-20 border-t border-[--color-border]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4 text-[--color-text]">Free Tools</h2>
+    <p class="text-[--color-text-muted] mb-8 max-w-xl mx-auto">For busy app owners</p>
+
+    <div class="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
+      {tools.map((tool) => (
+        <a
+          href={tool.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group block p-6 rounded-lg border border-[--color-border] hover:border-[--color-accent] transition-all text-left min-w-[280px] max-w-[320px]"
+          style="background-color: var(--color-surface-elevated);"
+        >
+          <h3 class="text-xl font-semibold mb-2 group-hover:text-[--color-accent] transition-colors text-[--color-text]">
+            {tool.name}
+          </h3>
+          <p class="text-[--color-text-muted] text-sm leading-relaxed">
+            {tool.description}
+          </p>
+          <div class="mt-4 text-[--color-accent] text-sm font-medium">
+            Try it →
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
