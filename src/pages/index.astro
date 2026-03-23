@@ -4,6 +4,7 @@ import Hero from '../components/Hero.astro';
 import HighlightReel from '../components/HighlightReel.astro';
 import ProjectGrid from '../components/ProjectGrid.astro';
 import Tools from '../components/Tools.astro';
+import Writing from '../components/Writing.astro';
 import OffTheClock from '../components/OffTheClock.astro';
 import Contact from '../components/Contact.astro';
 
@@ -69,9 +70,11 @@ const siteConfig = {
 
     <HighlightReel highlights={siteConfig.highlights} />
 
+    <Tools tools={siteConfig.tools} />
+
     <ProjectGrid />
 
-    <Tools tools={siteConfig.tools} />
+    <Writing />
 
     <OffTheClock hobbies={siteConfig.hobbies} />
 
