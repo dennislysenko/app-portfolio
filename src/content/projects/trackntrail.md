@@ -4,7 +4,7 @@ slug: "trackntrail"
 tagline: "Detect | Alert | Recover"
 primaryColor: "#FF0000"
 tag: "0→1: Built from scratch"
-order: 3
+order: 4
 storeLinks:
   appStore: "https://apps.apple.com/us/app/track-n-trail-hunting-maps/id6746768148"
   playStore: "https://play.google.com/store/apps/details?id=com.trackntrailapp.trackntrail"

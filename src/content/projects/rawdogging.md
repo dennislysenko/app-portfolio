@@ -4,8 +4,7 @@ slug: "rawdogging"
 tagline: "Dopamine Detox & Mindfulness"
 primaryColor: "#34C759"
 tag: "0→1: Built from scratch"
-badge: "Latest Release"
-order: 2
+order: 5
 storeLinks:
   appStore: "https://apps.apple.com/us/app/rawdogging-boredom/id6755054445"
 screenshots:

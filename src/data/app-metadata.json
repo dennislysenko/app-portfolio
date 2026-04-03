@@ -123,6 +123,22 @@
       ]
     },
     {
+      "name": "Site:See - Travel Companion",
+      "appStoreId": "6748361712",
+      "appStoreUrl": "https://apps.apple.com/us/app/site-see-travel-companion/id6748361712",
+      "subtitle": "AI Voice Guide to History",
+      "rating": null,
+      "reviews": 0,
+      "category": "Travel",
+      "developer": "CSS Media Ltd",
+      "role": "client",
+      "screenshots": [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7b/a4/be/7ba4bead-1dbf-fca9-da75-1342c12564a8/iPhone-6-9-V01-01.png/600x1300bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/18/14/a11814d9-67f8-f0c3-a853-01259beaa661/iPhone-6-9-V01-02.png/600x1300bb-60.jpg",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/50/53/ae/5053ae8b-5b4a-2eb0-caf3-3cf39bee9bcc/iPhone-6-9-V01-04.png/600x1300bb-60.jpg"
+      ]
+    },
+    {
       "name": "CleanSweep - Photo Cleaner AI",
       "appStoreId": "6748840698",
       "appStoreUrl": "https://apps.apple.com/us/app/cleansweep-photo-cleaner-ai/id6748840698",
