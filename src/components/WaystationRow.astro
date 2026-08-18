@@ -1,0 +1,180 @@
+---
+// Dedicated teaser row for Waystation (waystation.garden).
+// Self-themed with the Waystation palette — intentionally ignores the site theme.
+---
+
+<section class="waystation-row">
+  <div class="ws-inner">
+    <div class="ws-copy">
+      <p class="ws-eyebrow">Native-plant yard game &middot; iPhone &amp; Android beta</p>
+
+      <div class="ws-title">
+        <img src="/waystation/icon-256.png" alt="Waystation app icon" width="52" height="52" />
+        <h3>Waystation</h3>
+      </div>
+
+      <p class="ws-headline">Every yard is someone's whole&nbsp;world.</p>
+
+      <p class="ws-lede">
+        Waystation scores your yard the way native wildlife sees it, then shows you
+        the exact plants that turn a dead lawn into a living waystation: real
+        caterpillars, bees, and birds. The only game where the loot is alive.
+      </p>
+
+      <p class="ws-fact">A native oak can host <strong>500+ species of caterpillar</strong>. Waystation shows you where it goes.</p>
+
+      <a
+        href="https://waystation.garden"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="ws-cta"
+      >
+        Join the beta at waystation.garden
+      </a>
+    </div>
+
+    <div class="ws-art">
+      <img class="ws-foliage" src="/waystation/foliage.png" alt="Illustrated native foliage" loading="lazy" />
+      <img class="ws-art-icon" src="/waystation/icon-256.png" alt="" aria-hidden="true" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<style>
+  .waystation-row {
+    --ws-forest-deep: #0e2c1c;
+    --ws-forest: #17402a;
+    --ws-forest-soft: #1e4f34;
+    --ws-leaf: #388c54;
+    --ws-sage: #8ca97a;
+    --ws-gold: #c9973b;
+    --ws-gold-pale: #dfc170;
+    --ws-cream: #f3ecd7;
+    --ws-cream-dim: #e6dbbc;
+
+    background:
+      radial-gradient(1100px 520px at 78% -10%, var(--ws-forest-soft), transparent 65%),
+      var(--ws-forest);
+    color: var(--ws-cream);
+    border-bottom: 1px solid var(--color-border);
+    overflow: hidden;
+  }
+
+  .ws-inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .ws-inner {
+      flex-direction: row;
+      gap: 4rem;
+      padding: 6rem 1.5rem;
+    }
+  }
+
+  .ws-copy { width: 100%; }
+  @media (min-width: 768px) { .ws-copy { width: 55%; } }
+
+  .ws-eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ws-gold-pale);
+    margin-bottom: 1rem;
+  }
+
+  .ws-title {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .ws-title img { border-radius: 50%; }
+
+  .ws-title h3 {
+    font-family: "Young Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+
+  @media (min-width: 768px) { .ws-title h3 { font-size: 2.75rem; } }
+
+  .ws-headline {
+    font-family: "Young Serif", Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--ws-cream);
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 768px) { .ws-headline { font-size: 1.75rem; } }
+
+  .ws-lede {
+    color: var(--ws-cream-dim);
+    line-height: 1.65;
+    max-width: 34em;
+    margin-bottom: 1rem;
+  }
+
+  .ws-fact {
+    color: var(--ws-sage);
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .ws-fact strong { color: var(--ws-gold-pale); font-weight: 600; }
+
+  .ws-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--ws-gold);
+    color: var(--ws-forest-deep);
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ws-cta:hover {
+    background: var(--ws-gold-pale);
+    transform: translateY(-1px);
+  }
+
+  .ws-art {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ws-art-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (min-width: 768px) { .ws-art { width: 45%; } }
+
+  .ws-foliage {
+    width: min(100%, 26rem);
+    height: auto;
+    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.35));
+  }
+</style>

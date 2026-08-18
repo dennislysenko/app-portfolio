@@ -19,6 +19,8 @@ interface Props {
     appStore?: string;
     playStore?: string;
   };
+  website?: string;
+  emoji?: string;
   reversed?: boolean;
 }
 
@@ -33,6 +35,8 @@ const {
   featuredScreenshot,
   screenshots,
   storeLinks,
+  website,
+  emoji,
   reversed = false
 } = Astro.props;
 
@@ -86,7 +90,7 @@ const displayScreenshots = screenshots?.slice(0, 3) || [];
           </div>
         ) : (
           <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-[--accent]/30 to-[--accent]/5 flex items-center justify-center border border-[--color-border]">
-            <span class="text-8xl opacity-30">📱</span>
+            <span class="text-8xl opacity-30">{emoji || '📱'}</span>
           </div>
         )}
       </div>
@@ -134,6 +138,23 @@ const displayScreenshots = screenshots?.slice(0, 3) || [];
                 <span class="font-medium">Play Store</span>
               </a>
             )}
+          </div>
+        )}
+
+        {website && (
+          <div class="flex flex-wrap gap-3 mt-6">
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 px-5 py-3 rounded-xl bg-[--color-surface-elevated] border border-[--color-border] hover:border-[--accent]/50 hover:bg-[--accent]/10 transition-all"
+            >
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M3 12h18M12 3c2.5 2.6 3.75 5.8 3.75 9S14.5 18.4 12 21c-2.5-2.6-3.75-5.8-3.75-9S9.5 5.6 12 3z"/>
+              </svg>
+              <span class="font-medium">{website.replace(/^https?:\/\//, '')}</span>
+            </a>
           </div>
         )}
       </div>

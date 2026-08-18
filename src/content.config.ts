@@ -14,6 +14,8 @@ const projects = defineCollection({
       appStore: z.string().optional(),
       playStore: z.string().optional(),
     }).optional(),
+    website: z.string().optional(),
+    emoji: z.string().optional(),
     screenshots: z.array(z.object({
       src: z.string(),
       alt: z.string(),

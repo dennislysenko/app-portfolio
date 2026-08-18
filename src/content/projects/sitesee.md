@@ -4,8 +4,7 @@ slug: "sitesee"
 tagline: "AI Voice Guide to History"
 primaryColor: "#6EC6E6"
 tag: "0→1: Built from scratch"
-badge: "Latest Release"
-order: 2
+order: 7
 storeLinks:
   appStore: "https://apps.apple.com/us/app/site-see-travel-companion/id6748361712"
 screenshots:

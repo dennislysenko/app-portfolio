@@ -1,12 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 import ProjectRow from './ProjectRow.astro';
+import WaystationRow from './WaystationRow.astro';
 
 const projects = await getCollection('projects');
 const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
 ---
 
-<section id="work" class="py-20">
+<section id="work" class="pt-20">
   <div class="max-w-6xl mx-auto px-6 mb-12">
     <h2 class="text-3xl md:text-4xl font-bold mb-4">App Portfolio</h2>
   </div>
@@ -24,6 +25,8 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
         featuredScreenshot={project.data.featuredScreenshot}
         screenshots={project.data.screenshots}
         storeLinks={project.data.storeLinks}
+        website={project.data.website}
+        emoji={project.data.emoji}
         reversed={index % 2 === 1}
       />
     ))}
@@ -31,7 +34,13 @@ const sortedProjects = projects.sort((a, b) => (a.data.order || 0) - (b.data.ord
 
   <div class="max-w-6xl mx-auto px-6 mt-12">
     <p class="text-[--color-text-muted] text-center italic">
-      And 9 more: Video 2 MP3 Converter, No Crop Story, Fitness AI, Teeth Whitener, Red Eye Corrector, CleanSweep, plus 3 retired apps.
+      And 9 more: Video 2 MP3 Converter, No Crop Story, Fitness AI, CleanSweep, plus 5 retired apps.
     </p>
   </div>
+
+  <div class="max-w-6xl mx-auto px-6 mb-12 mt-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Coming Soon</h2>
+  </div>
+
+  <WaystationRow />
 </section>

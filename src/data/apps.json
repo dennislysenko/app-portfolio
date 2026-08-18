@@ -46,10 +46,10 @@
     },
     {
       "name": "TriShot",
-      "appStoreId": "",
-      "appStoreUrl": "",
+      "appStoreId": "6761485606",
+      "appStoreUrl": "https://apps.apple.com/us/app/trishot-dualshot-face-cam/id6761485606",
       "featuredOnSite": true,
-      "badge": "Coming Soon"
+      "badge": "Latest Release"
     },
     {
       "name": "Rawdogging Boredom",
@@ -68,13 +68,15 @@
       "name": "Teeth Whitener & Whitening",
       "appStoreId": "6477489444",
       "appStoreUrl": "https://apps.apple.com/us/app/teeth-whitener-whitening/id6477489444",
-      "featuredOnSite": false
+      "featuredOnSite": false,
+      "status": "defunct"
     },
     {
       "name": "Red Eye Corrector",
       "appStoreId": "6479655837",
       "appStoreUrl": "https://apps.apple.com/us/app/red-eye-corrector-color-change/id6479655837",
-      "featuredOnSite": false
+      "featuredOnSite": false,
+      "status": "defunct"
     },
     {
       "name": "Selfie.AR",
@@ -111,8 +113,7 @@
       "role": "Strategy & Development",
       "appStoreId": "6748361712",
       "appStoreUrl": "https://apps.apple.com/us/app/site-see-travel-companion/id6748361712",
-      "featuredOnSite": true,
-      "badge": "Latest Release"
+      "featuredOnSite": true
     }
   ]
 }

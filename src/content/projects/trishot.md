@@ -4,9 +4,10 @@ slug: "trishot"
 tagline: "Record once. Publish everywhere."
 primaryColor: "#f7c948"
 tag: "0→1: Built from scratch"
-badge: "Coming Soon"
+badge: "Latest Release"
 order: 3
-storeLinks: {}
+storeLinks:
+  appStore: "https://apps.apple.com/us/app/trishot-dualshot-face-cam/id6761485606"
 screenshots:
   - src: "/screenshots/trishot/screens/1.png"
     alt: "Instant platform - vertical and horizontal from one take"

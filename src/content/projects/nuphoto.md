@@ -5,7 +5,7 @@ tagline: "Aesthetic Glitch Retro Camera"
 primaryColor: "#FF6B9D"
 tag: "0→1: Built from scratch"
 badge: "First Solo Project"
-order: 6
+order: 8
 storeLinks:
   appStore: "https://apps.apple.com/us/app/nu-photo-vaporwave-filters/id1435721457"
 screenshots:
